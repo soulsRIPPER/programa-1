@@ -14,5 +14,7 @@ void main()
 	cin>> edad;
 	if (edad >=18 )
 	cout<<"puede votar: ";
+	else
+		cout<<" no puede votar: ";
 	getch();
 }
