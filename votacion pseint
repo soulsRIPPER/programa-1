@@ -1,0 +1,8 @@
+Proceso1 votacion
+	definir edad Como Entero;
+	escribir "ingrese la edad "; // letrero para para que el usuario conosca el valor a ingresar
+	leer edad;
+	si edad >= 18 Entonces
+		escribir "puede votar";
+	FinSi
+FinProceso
