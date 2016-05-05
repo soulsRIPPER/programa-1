@@ -1,0 +1,40 @@
+// funcion par.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+bool par(int n); // Prototipo de la funcion
+
+void main()
+{
+	bool z;
+	int numero,n;
+	cout<<"ingrese el numero de veces que quieres repetir:"<<endl;
+	cin>> n;
+	for(int i=1;i<=n;i++)
+	{
+		cout<<"escriba un numero:"<<endl;
+		cin>> numero;
+		z= par(numero); // Llamar una funcion
+		if (z)
+			cout<<"es par"<<endl;
+		else
+			cout<<"es impar"<<endl;
+	}
+	getch();
+}
+
+bool par(int n) // Declaración de la función
+{
+	bool m;
+	if (n%2==0)
+		m=true;
+	else
+		m=false;
+	return m;
+}
+
