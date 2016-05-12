@@ -1,0 +1,81 @@
+// menu3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdlib.h"
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+float area_del_cuadrado(float l);
+void potencia(float a, int b,float &z);
+int mcd_de_dos_numeros(int x,int z);
+
+	using namespace std;
+void main()
+{
+	int b,x,z,R2,opcion,mcd;
+	float l,a,area,z;
+	do{
+	cout<<"menu"<<endl;
+	cout<<"area de un cuadrado"<<endl;
+	cout<<"potencias"<<endl;
+	cout<<"minimo comun divisor"<<endl;
+	cin>>opcion;
+	switch(opcion)
+	{
+	case 1:
+		{
+			cout<<"ingrese un lado del cuadrado"<<endl;
+			cin>>l;
+			area=area_del_cuadrado(l);
+			cout<<"su area es :"<<endl;
+			cout<<area<<endl;
+			break;
+		}
+	case 2:
+		{
+			cout<<"ingrese el numero"<<endl;
+			cin>>a;
+			cout<<"ingrese el exponente"<<endl;
+			cin>>b;
+			potencia(a,b,R2);
+			cout<<"el resultado es"<<endl;
+			cout<<R2<<endl;
+			break;
+		}
+	case 3:
+		{
+			cout<<"ingrese el primer numero"<<endl;
+			cin>>x;
+			cout<<"ingrese el segundo numero"<<endl;
+			cin>>z;
+			mcd=mcd_de_dos_numeros(x,z);
+			cout<<"MCD es:"<<endl;
+			cout<<mcd<<endl;
+			break;
+		}
+	case 0:
+		{
+			cout<<"salir"<<endl;
+			break;
+		}
+	default:
+		{
+			cout<<"opcion no valida"<<endl;
+			break;
+		}
+	}
+	getch();
+}while(opcion!=0);
+
+}
+
+float area_del_cuadrado(float l)
+{
+	float area;
+	area=l*l;
+	return(area);
+}
+void potencia(float a, int b,float &z);
+{
+Z=1;
+for(
